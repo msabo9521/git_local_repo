@@ -17,6 +17,11 @@
  * under the License.
  */
 
+$("#button").on("click", function(e) {
+	e.preventDefault();
+	scanner.scan();
+});
+
    var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
    scanner.scan(
